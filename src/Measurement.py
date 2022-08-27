@@ -6,7 +6,7 @@
 from dataclasses import dataclass
 import pandas as pd
 
-# headers measruement [
+# headers measurement [
 #   'ID', 'Name', 'Temperature [°C]', 'Humidity [%]', 'Material type',
 #   'Serial number', 'PDC output voltage (DC) [V]', 'FDS output voltage (AC) [V]',
 #   'c0', 'Sample thickness [m]', 'Measurement started'
@@ -16,7 +16,7 @@ import pandas as pd
 #   'Phase of Y [°]', 'Cp [F]', 'Rp [Ω]', "c' [F]", "c'' [F]", 'R [Ω]', 'X [Ω]'
 # ]
 
-
+# Define "Measurement"-class (datastructure)
 @dataclass(order=True, frozen=True)
 class Measurement:
     material: pd.DataFrame

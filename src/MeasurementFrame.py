@@ -9,6 +9,8 @@ from Measurement import Measurement
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import numpy as np
 
+# Define "MeasurementFrame" (table and plot)
+
 
 class MeasurementFrame:
     def __init__(self, main_window: tk.Tk, measurement: Measurement):
