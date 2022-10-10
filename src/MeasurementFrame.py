@@ -45,6 +45,11 @@ class MeasurementFrame:
                  color=color2, linewidth=2, )
         ax2.set_ylabel("εr''", color=color2, fontsize=16)
         ax2.grid()
+        # Define Tick-Fontsize
+        for label in (ax.get_xticklabels() + ax.get_yticklabels()):
+            label.set_fontsize(12)
+        for label in (ax2.get_xticklabels() + ax2.get_yticklabels()):
+            label.set_fontsize(12)
 
         plot1 = FigureCanvasTkAgg(fig.get_figure(), self.frame)
         plot1.get_tk_widget().pack(fill=tk.BOTH, expand=True)

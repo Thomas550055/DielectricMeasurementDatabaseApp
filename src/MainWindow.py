@@ -97,8 +97,11 @@ class MainWindow:
             print('Unable to access file')
             return None
 
+        # Invert εr'' Values
         measurements_df = create_data_frame_with('MEASUREMENTS', file.name)
         fds_results_df = create_data_frame_with('FDS RESULTS', file.name)
+        fds_results_df["εr''"] = fds_results_df["εr''"].apply(pd.to_numeric)
+        fds_results_df["εr''"] = fds_results_df["εr''"] * -1
 
         # Drop first two unnecessary rows
         measurements_df = measurements_df.drop([0, 1], axis=0)
