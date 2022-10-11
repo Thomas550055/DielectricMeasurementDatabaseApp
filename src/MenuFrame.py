@@ -53,10 +53,10 @@ class MenuFrame:
         add_csv_button.grid(row=0, column=2, sticky="ew", padx=10)
 
     def ui_draw_logo(self):
-        print('update image path')
+        # print('update image path')
         # canvas = tk.Canvas(self.frame, width=280, height=56, background="white")
         # canvas.grid(row=0, column=3, pady=0, sticky="ew", padx=0)
-        # img = ImageTk.PhotoImage(Image.open("/Users/timogerth/Development/python-example/src/image.png"))
+        # img = ImageTk.PhotoImage(Image.open(""))
         # canvas.create_image(200, 56, anchor=tk.CENTER, image=img)
 
     def ui_draw_frequency_dropdown(self, frequencies, selected_frequency):
