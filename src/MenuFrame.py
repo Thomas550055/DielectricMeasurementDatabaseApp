@@ -53,7 +53,7 @@ class MenuFrame:
         add_csv_button.grid(row=0, column=2, sticky="ew", padx=10)
 
     def ui_draw_logo(self):
-        # print('update image path')
+        print('No Logo selected')
         # canvas = tk.Canvas(self.frame, width=280, height=56, background="white")
         # canvas.grid(row=0, column=3, pady=0, sticky="ew", padx=0)
         # img = ImageTk.PhotoImage(Image.open(""))
